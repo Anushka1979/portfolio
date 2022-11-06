@@ -1,0 +1,330 @@
+@font-face {
+    font-family: "DELIRIUM NCV";
+    src: url(./DELIRIUM\ NCV.TTF);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./GILROY-LIGHT.OTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    background-color: #fff;
+    overflow: hidden;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: blueviolet; */
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 5vh;
+    height: 25vh;
+    width: 100vw;
+    /* background-color: rgb(107, 20, 20); */
+}
+#nav #start h1{
+    font-family: "DELIRIUM NCV";
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+#nav #start h2{
+    text-transform: uppercase;
+    font-family: "DELIRIUM NCV";
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 3vh;
+}
+#nav #start h3{
+    text-transform: uppercase;
+    font-family: "DELIRIUM NCV";
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 3vh;
+}
+#nav #start h4{
+    text-transform: uppercase;
+    font-family: "DELIRIUM NCV";
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 3vh;
+}
+#nav #last{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#nav #last h4{
+    margin-right: 10px;
+    font-family: "DELIRIUM NCV";
+    letter-spacing: 2px;
+    font-size: 3vh;
+    font-weight: 300;
+}
+#nav #last i{
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#box0{
+    position: relative;
+    top: 30%;
+    left: 89vw;
+    transform: translate(50%,-50%);
+    height: 8vh;
+    width: 6vw;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    opacity: .8;
+    /* background-color: blue; */
+}
+#box0 h3{
+    position: relative;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    font-family: "DELIRIUM NCV";
+    font-weight: 400;
+}
+#box{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100vh;
+    width: 50vw;
+    border-radius: 50%;
+    background-color:rgb(193 156 60);
+}
+#box img{
+    filter: drop-shadow(10px 15px 20px rgb(22,22,22));
+    position: relative;
+    top: 60%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    height: 85vh;
+}
+#text{
+    position: relative;
+    bottom: 40vh;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 10vh;
+}
+#text #start h1{
+    letter-spacing: 5px;
+    font-size: 15vh;
+    font-weight: 300;
+    font-family:"DELIRIUM NCV" ;
+}
+#text #start h4{
+    font-family: Gilroy;
+    opacity: .8;
+}
+#second{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#second i{
+    border: 1px solid none;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: rgba(193, 155, 60, 0.855);
+    color: #fff;
+    font-size: 3vh;
+    cursor: pointer;
+}
+#second h3{
+    font-family:"DELIRIUM NCV" ;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 2.5wh;
+    cursor: pointer;
+}
+#page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: aqua; */
+}
+#text2{
+    line-height: 1.5;
+    position: absolute;
+    bottom: -29%;
+    left: 10vh;
+}
+#text2 h1{
+    font-size: 9vh;
+    font-family: Gilroy;
+    font-weight: 600;
+}
+#text2 p{
+    font-family: Gilroy;
+    width: 44vh;
+    /* background-color: aqua; */
+    line-height: 1;
+    font-weight: 600;
+    opacity: .8;
+}
+#text2 p span{
+    font-size: large;
+    font-weight: 900;
+}
+#Scroll{
+    position: relative;
+    top: 20%;
+    display: flex;
+    height: 30vw;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 2vw 5vw;
+    gap: 30px;
+}
+#Scroll::-webkit-scrollbar{
+    display: none;
+}
+.slide{
+    position: relative;
+    overflow: hidden;
+    width: 52vw;
+    height: 100%;
+    flex-shrink: 0;
+    background-color: rgb(56, 15, 15);
+}
+.slide>img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slide>img:nth-child(1){
+    filter: grayscale();
+}
+.slide>img:nth-child(2){
+    clip-path: circle(0% at 0px 0px);
+    transition: ease-in-out;
+}
+#page3{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    overflow: hidden;
+}
+#page3 #text1 h1{
+    position: absolute;
+    margin-top: 10vw;
+    left: 5%;
+    /* font-family: ; */
+    font-size: 20vh;
+    width: 50vw;
+    font-weight: 600;
+    /* background-color: blue; */
+}
+#page3 #image{
+    position: relative;
+    left: 70%;
+    top: 10vh;
+    height: 90vh;
+    width: 30vw;
+    filter: grayscale();
+    /* background-color: blue; */
+}
+#page3 #image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#image>h1{
+    position: relative;
+    left: -25vh;
+    bottom: 30vh;
+    font-family: Averta;
+    font-size: 40vh;
+    letter-spacing: 1vh;
+    font-weight: 100;
+    opacity: .6;
+    color: rgb(8,56,42);
+    /* background-color: blue; */
+}
+#page3 #text3 p{
+    position: relative;
+    bottom: 29vh;
+    left: 10vh;
+    width: 45vh;
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 2vh;
+    z-index: 9999999;
+    line-height: 1;
+    opacity: 1.5;
+    padding-top: 10vh;
+}
+#page4{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+#part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
+}
+#text4{
+    gap: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#text4 h1{
+    font-size: 12vh;
+    font-weight: 700;
+    font-family: Gilroy;
+}
+#text4 h2{
+    font-family: Gilroy;
+    font-size: 5vh;
+    font-weight: 600;
+}
+#text4 a{
+    text-decoration: none;
+    color: #000;
+    font-family: Gilroy;
+    opacity: .8;
+    font-weight: 700;
+    font-size: 3vh;
+    letter-spacing: 3px;
+}
+#part2{
+    height: 100vh;
+    width: 50vw;
+    /* background-color: blanchedalmond; */
+}
+#part2 img{
+    position: relative;
+    left: 15vh;
+    height: 100%;
+    width: 85%;
+    object-fit: cover;
+    cursor: pointer;
+}
